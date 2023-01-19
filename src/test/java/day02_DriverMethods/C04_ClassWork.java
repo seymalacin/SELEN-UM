@@ -23,6 +23,7 @@ public class C04_ClassWork {
 
         //Search(ara) “city bike”
         driver.findElement(By.id("twotabsearchtextbox")).sendKeys("city bike", Keys.ENTER);
+
         //Amazon'da görüntülenen ilgili sonuçların sayısını yazdırın
          List<WebElement>aramaSonucYazisi =driver.findElements(By.className("sg-col-inner"));
         System.out.println("Arama sonuc yazısı :"+aramaSonucYazisi.get(0).getText());

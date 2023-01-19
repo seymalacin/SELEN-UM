@@ -14,8 +14,11 @@ public class C01_Examples {
 
         System.setProperty("web driver.chrome.driver","src/resources/drivers/chromedriver.exe");
         ChromeDriver driver = new ChromeDriver();
-        //İlk önce browser'i maximize yapalım sonra tüm sayfa için max bekleme süresi olarak 15 saniye belirtelim
+
+        //İlk önce browser'i maximize yapalım sonra
         driver.manage().window().maximize();
+
+        // tüm sayfa için max bekleme süresi olarak 15 saniye belirtelim
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
 
         //Sırasıyla amazon,facebook ve youtube sayfalarına gidelim.
